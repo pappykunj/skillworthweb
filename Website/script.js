@@ -1,6 +1,5 @@
-
-
-const firebaseConfig = {
+function initializeApp(){
+var firebaseConfig = {
   apiKey: "AIzaSyAbpzx3c2POreVRuwKaOwcJyy4yVu6ucIo",
   authDomain: "projectx-f740a.firebaseapp.com",
   databaseURL: "https://projectx-f740a-default-rtdb.firebaseio.com",
@@ -15,9 +14,9 @@ const firebaseConfig = {
  firebase.initializeApp(firebaseConfig);
 
 // reference your database
-var formDB = firebase.database().ref("formCDB");
+var formcDB = firebase.database().ref("formc");
 
-document.getElementById("formCDB").addEventListener("submit", submitForm);
+document.getElementById("formc").addEventListener("submit", submitForm);
 
 function submitForm(e) {
   e.preventDefault();
@@ -26,19 +25,25 @@ function submitForm(e) {
 
   
 
-  // //   enable alert
-  // document.querySelector(".alert").style.display = "block";
+  
 
-  // //   remove the alert
-  // setTimeout(() => {
-  //   document.querySelector(".alert").style.display = "none";
-  // }, 3000);
-
-  //   reset the form
+    // reset the form
+  saveMessages(emailid, msgContent);
  
   console.log(emailid,msgContent);
+}
+
+const saveMessages = ( emailid, msgContent) => {
+ var newformc = formcDB.push();
+
+ newformc.set({
+
+  emailid: emailid,
+  msgContent: msgContent,
+});
 }
 
 var getElementVal = (id) => {
   return document.getElementById(id).value;
 };
+}
