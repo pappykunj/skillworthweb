@@ -1,29 +1,30 @@
+
+
 const firebaseConfig = {
-  apiKey: "AIzaSyAMld6inH1PiOElFydp3jIk0s54sHbFkGY",
-  authDomain: "myskillworth.firebaseapp.com",
-  databaseURL: "https://myskillworth-database-id.rtdb..firebasedatabase.app",
-  projectId: "myskillworth",
-  storageBucket: "myskillworth.appspot.com",
-  messagingSenderId: "640087476097",
-  appId: "1:640087476097:web:ee8de0deb23815102e8a80",
-  measurementId: "G-LSNXH4CVKS"
-  //   copy your firebase config informations
+  apiKey: "AIzaSyAbpzx3c2POreVRuwKaOwcJyy4yVu6ucIo",
+  authDomain: "projectx-f740a.firebaseapp.com",
+  databaseURL: "https://projectx-f740a-default-rtdb.firebaseio.com",
+  projectId: "projectx-f740a",
+  storageBucket: "projectx-f740a.appspot.com",
+  messagingSenderId: "221161079706",
+  appId: "1:221161079706:web:5ac5282829fe5d6a39f023",
+  measurementId: "G-0CJ582Q82B"
 };
 
 // initialize firebase
-firebase.initializeApp(firebaseConfig);
+ firebase.initializeApp(firebaseConfig);
 
 // reference your database
-var formcDB = firebase.database().ref("formc");
+var formDB = firebase.database().ref("formCDB");
 
-document.getElementById("formc").addEventListener("submit", submitForm);
+document.getElementById("formCDB").addEventListener("submit", submitForm);
 
 function submitForm(e) {
   e.preventDefault();
   var emailid = getElementVal("emailid");
   var msgContent = getElementVal("msgContent");
 
-  saveMessages(emailid, msgContent);
+  
 
   // //   enable alert
   // document.querySelector(".alert").style.display = "block";
@@ -34,18 +35,10 @@ function submitForm(e) {
   // }, 3000);
 
   //   reset the form
-  document.getElementById("formc").reset();
+ 
+  console.log(emailid,msgContent);
 }
 
-const saveMessages = (emailid, msgContent) => {
-  var newformc = formcDB.push();
-
-  newformc.set({
-    emailid: emailid,
-    msgContent: msgContent,
-  });
-};
-
-const getElementVal = (id) => {
+var getElementVal = (id) => {
   return document.getElementById(id).value;
 };

@@ -9,11 +9,14 @@
     <script src="https://kit.fontawesome.com/3477ae541c.js" crossorigin="anonymous"></script>
     <link rel = "stylesheet" type=" text/css" href= "style.css">
     <title>ProjectX</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    <script src='https://cdn.firebase.com/js/client/2.2.1/firebase.js'></script>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+   
     <script src="script.js"></script>
 </head>
 <body>
-
+    <script type= "module" src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    <script type= "module" src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
     <!-- headr  -->
     <header>
          
@@ -190,6 +193,7 @@
     
 
    <!-- review  -->
+   <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
    <section class="review" id="review">
     <h1 class="heading">reviews</h1>
     
@@ -213,12 +217,12 @@
 <section class="contact" id="contact">
     <h1 class="heading">Contact us</h1>
     <div class="row">
-        <div class="form-c">
-            <form action="" style="margin-left: 300px;">
+        <div class="formc">
+            <form action="" id = "formCDB" style="margin-left: 300px;">
 
                 <input type="text" placeholder="enter your name .....">
                 <input type="email" placeholder="enter your email .....">
-                <input type="submit" value="send message">
+                <button type="submit" value="submit">
             </form>
         </div>
     </div>
@@ -251,7 +255,6 @@
         </div>
     </footer>
     <!-- footer  -->
-     
-    <script src="script.js"></script>
+
 </body>
 </html>
