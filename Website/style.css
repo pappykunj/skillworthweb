@@ -166,7 +166,7 @@ header .search-form label:hover{
     width: 350px;
     overflow: hidden;
     white-space: nowrap;
-    animation: animate7.8s linear infinite;
+    animation: animate 7.8s linear infinite;
     filter: drop-shadow(0 0 20px rgb(243, 240, 240)) drop-shadow(0 0 50px rgb(255, 255, 255));
 }
 
@@ -345,7 +345,7 @@ header .search-form label:hover{
     font-size: 3rem;
     letter-spacing: 0.7rem;
     text-align: center; 
-    color: #eee;
+    color: #fff;
     
 }
 
