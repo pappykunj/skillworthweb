@@ -124,10 +124,8 @@ header .search-form label:hover{
 }
 
 .home .home-content{
-    background-image: url(websiteimages/imag1.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    
+    
     height: 120vh;
     width: 100%; 
     top: 0; left: 0; right: 0;
@@ -144,12 +142,17 @@ header .search-form label:hover{
     
 }
 .home .back-video{
-    position : absolute;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
     right: 0;
+    top: 0;
     bottom: 0;
     z-index: -1;
-    
-    }
+}
+
 .home .home-content .home-i h1{
     font-size: 6rem;
     letter-spacing: 1.3rem;
@@ -410,25 +413,23 @@ header .search-form label:hover{
 
 .review{
     background: rgb(0, 0, 0);
+    margin: auto;
 }
 
 
 .review .row{
     display: flex;
+    justify-content:center;
     align-items: center;
-    justify-content: space-between;
-    height: 70vh;
-    width: 50%;
-    margin-left: 32rem;
-    gap: 1.5rem;
-    
-
+    margin: auto;
+    height: 80vh;
+    width: 80%;
 }
 .review .row .box{
     text-align: center;
     padding: 7rem;
     border-radius: 1rem;
-    margin: 4rem 0;
+    
 }
 .review .row .box:hover{
     background: #eee;
@@ -451,33 +452,46 @@ header .search-form label:hover{
     color: #fff;
     font-family: monospace;
 }
-.review .row input{
+.review .row input{    
+    display: flex;
+    justify-content:center;
+    align-items: center;
     background: #000;
-    border-radius: 0.5rem;
+    margin: auto;
+    border-radius: 0.8rem;
     border: 0.1rem solid var(--sc-color);
-    height: 3rem; width: 100%;
-    margin: 0.5rem 0;
+    height: 3rem; width: 60%;
+    padding: 0.5rem 0.8rem; 
     color: #fff;
     font-size: 2rem;
     font-family:monospace;
+    text-transform: lowercase
 }
-.review .row button[type="submit"]{
+.review .row button{
+
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin: auto;
+    border-radius: 0.8rem;
+    font-family:monospace;
     background: var(--sc-color);
     cursor: pointer;
     font-size: 2rem;
-    padding-bottom: 4rem;
-    height: 3rem; width: 100%;
-    margin-bottom: 2rem;
+    padding:2rem;
+    height: 3rem; width: 60%;
     color: #fff;
 }
-.review .row input[type="submit"]:hover{
-    background: #fff;
-    color: var(--sc-color);
-}
+
 .review .row textarea{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin: auto;
     background: #000;
+    border-radius: 0.8rem;
     border: 0.1rem solid var(--sc-color);
-    height: 14rem; width: 100%;
+    height: 20rem; width: 60%;
     padding: 0.5rem 0.8rem; 
     font-family: monospace;
     color: #fff;
@@ -488,6 +502,7 @@ header .search-form label:hover{
 }
 
 .contact{
+    height: 35vh;
     background: #000;
 }
 .contact .row{
@@ -495,6 +510,7 @@ header .search-form label:hover{
     height: 30vh;
     width: 90%;
     margin-left: 6rem;
+    margin-bottom: 0;
 }
 .contact .row .formc h3{
     font-size: 2.5rem;
@@ -502,16 +518,14 @@ header .search-form label:hover{
     color: #fff;
     font-family: monospace;
 }
-.contact .row .formc input{
+/* .contact .row .formc input{
     background: #000;
     border-radius: 0.5rem;
     border: 0.1rem solid var(--sc-color);
-    padding: 0.9rem 0.8rem;
     height: 2.3rem; width: 90%;
-    margin: 0.5rem 0;
     color: rgb(172, 170, 170);
     font-size: 1.5rem;
-}
+} */
 /* .contact .row .form-c input[type="submit"]{
     background: var(--sc-color);
     cursor: pointer;
@@ -524,13 +538,13 @@ header .search-form label:hover{
     background: #fff;
     color: var(--sc-color);
 } */
-.contact .row textarea{
+/* .contact .row textarea{
     background: #fff;
     border: 0.1rem solid var(--sc-color);
     height: 12rem; width: 90%;
     padding: 0.5rem 0.8rem; 
     font-size: 1.5rem;
-}
+} */
 /* .popup{
     width: 100%;
     background: #fff;
@@ -543,14 +557,13 @@ header .search-form label:hover{
     color: #fff;
 } */
 
-.footer{
-    
+.footer{ 
     text-align: center;
+    background-color: #eee;
 }
 .footer .share{
-    background: rgb(255, 255, 255);
     padding-top: 6rem;
-    margin: 2rem 0;
+    
 }
 .footer .share a{
     height: 5rem; width: 5rem;
@@ -560,6 +573,12 @@ header .search-form label:hover{
     color: #000;
     border: 0.1rem solid var(--sc-color);
     margin: 0.3rem;
+}
+.footer p{
+    padding: 2rem;
+    font-size: 2rem;
+    font-family: monospace;
+    text-transform: lowercase;
 }
 .footer .links{
     display: flex;
