@@ -124,20 +124,18 @@ header .search-form label:hover{
 }
 
 .home .home-content{
-    
-    
-    height: 120vh;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin: auto;
+    height: 125vh;
     width: 100%; 
     top: 0; left: 0; right: 0;
     position: relative;   
     font-family: monospace;
 }
 .home .home-content .home-i{
-    display: flex;
-    align-items: center;
     position: absolute;
-    top: 10%;left: 8%;
-    margin: 0rem;
     flex-wrap: wrap;
     
 }
@@ -210,7 +208,7 @@ header .search-form label:hover{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 70vh;
+    height: 90vh;
     width: 100%; 
     top: 0; left: 0; right: 0;;
     position: relative;  
@@ -220,7 +218,7 @@ header .search-form label:hover{
     display: flex;
     align-items: center;
     position: absolute;
-    top: 8%; left: 5%;
+    top: 4%; left: 5%;
     margin: 8rem;
     flex-wrap: wrap;
     font-family: sans-serif;
@@ -320,22 +318,23 @@ header .search-form label:hover{
 }
 
 .quote .quote-content{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin: auto;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 50vh;
+    height: 52vh;
     width: 100%;
-    top: 0; left: 0; right: 0;
     position: relative;
    
     
 }
 .quote .quote-content .quote-i{
-    display: flex;
+
     align-items: center;
     position: absolute;
-    top: 15%; left: 9%;
-    margin: 0rem;
     flex-wrap: wrap;
     
 }
@@ -413,7 +412,7 @@ header .search-form label:hover{
 
 .review{
     background: rgb(0, 0, 0);
-    margin: auto;
+   
 }
 
 
@@ -423,7 +422,7 @@ header .search-form label:hover{
     align-items: center;
     margin: auto;
     height: 80vh;
-    width: 80%;
+    width: 90%;
 }
 .review .row .box{
     text-align: center;
@@ -458,9 +457,10 @@ header .search-form label:hover{
     align-items: center;
     background: #000;
     margin: auto;
+    margin-bottom: 1rem;
     border-radius: 0.8rem;
     border: 0.1rem solid var(--sc-color);
-    height: 3rem; width: 60%;
+    height: 5rem; width: 80%;
     padding: 0.5rem 0.8rem; 
     color: #fff;
     font-size: 2rem;
@@ -479,7 +479,7 @@ header .search-form label:hover{
     cursor: pointer;
     font-size: 2rem;
     padding:2rem;
-    height: 3rem; width: 60%;
+    height: 3rem; width: 40%;
     color: #fff;
 }
 
@@ -488,10 +488,11 @@ header .search-form label:hover{
     justify-content:center;
     align-items: center;
     margin: auto;
+    margin-bottom: 1rem;
     background: #000;
     border-radius: 0.8rem;
     border: 0.1rem solid var(--sc-color);
-    height: 20rem; width: 60%;
+    height: 20rem; width: 80%;
     padding: 0.5rem 0.8rem; 
     font-family: monospace;
     color: #fff;
@@ -575,9 +576,9 @@ header .search-form label:hover{
     margin: 0.3rem;
 }
 .footer p{
-    padding: 2rem;
+    padding: 1rem;
     font-size: 2rem;
-    font-family: monospace;
+    font-family: serif;
     text-transform: lowercase;
 }
 .footer .links{
