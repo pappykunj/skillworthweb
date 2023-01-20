@@ -441,6 +441,7 @@ header .search-form label:hover{
     letter-spacing: 1rem;
     padding: 1.5rem;
     color: #fff;
+    font-family: monospace;
     
 }
 .review .row  h3{
@@ -454,11 +455,11 @@ header .search-form label:hover{
     background: #000;
     border-radius: 0.5rem;
     border: 0.1rem solid var(--sc-color);
-    padding: 0.9rem 0.8rem;
     height: 3rem; width: 100%;
     margin: 0.5rem 0;
     color: #fff;
     font-size: 2rem;
+    font-family:monospace;
 }
 .review .row button[type="submit"]{
     background: var(--sc-color);
@@ -482,25 +483,26 @@ header .search-form label:hover{
     color: #fff;
     font-size: 2rem;
 }
-
+.aboutus{
+    background: #000;
+}
 
 .contact{
     background: #000;
 }
 .contact .row{
-    display: flex;
     align-items: center;
-    justify-content: space-between;
-    height: 50vh;
+    height: 30vh;
     width: 90%;
-    margin: 0 auto;
-    gap: 1.5rem;
+    margin-left: 6rem;
 }
-.contact .row .form-c h3{
+.contact .row .formc h3{
     font-size: 2.5rem;
     text-align: center;
+    color: #fff;
+    font-family: monospace;
 }
-.contact .row .form-c input{
+.contact .row .formc input{
     background: #000;
     border-radius: 0.5rem;
     border: 0.1rem solid var(--sc-color);
@@ -510,7 +512,7 @@ header .search-form label:hover{
     color: rgb(172, 170, 170);
     font-size: 1.5rem;
 }
-.contact .row .form-c input[type="submit"]{
+/* .contact .row .form-c input[type="submit"]{
     background: var(--sc-color);
     cursor: pointer;
     font-size: 1.5rem;
@@ -521,7 +523,7 @@ header .search-form label:hover{
 .contact .row .form-c input[type="submit"]:hover{
     background: #fff;
     color: var(--sc-color);
-}
+} */
 .contact .row textarea{
     background: #fff;
     border: 0.1rem solid var(--sc-color);
@@ -529,7 +531,17 @@ header .search-form label:hover{
     padding: 0.5rem 0.8rem; 
     font-size: 1.5rem;
 }
-
+/* .popup{
+    width: 100%;
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #fff;
+} */
 
 .footer{
     

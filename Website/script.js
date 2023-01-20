@@ -1,13 +1,13 @@
 function initializeApp(){
 var firebaseConfig = {
-  apiKey: "AIzaSyAbpzx3c2POreVRuwKaOwcJyy4yVu6ucIo",
-  authDomain: "projectx-f740a.firebaseapp.com",
-  databaseURL: "https://projectx-f740a-default-rtdb.firebaseio.com",
-  projectId: "projectx-f740a",
-  storageBucket: "projectx-f740a.appspot.com",
-  messagingSenderId: "221161079706",
-  appId: "1:221161079706:web:5ac5282829fe5d6a39f023",
-  measurementId: "G-0CJ582Q82B"
+  apiKey: "AIzaSyAMld6inH1PiOElFydp3jIk0s54sHbFkGY",
+  authDomain: "myskillworth.firebaseapp.com",
+  databaseURL: "https://myskillworth-default-rtdb.asia-southeast1.firebasedatabase.app",
+  projectId: "myskillworth",
+  storageBucket: "myskillworth.appspot.com",
+  messagingSenderId: "640087476097",
+  appId: "1:640087476097:web:ee8de0deb23815102e8a80",
+  measurementId: "G-LSNXH4CVKS"
 };
 
 // initialize firebase
@@ -26,7 +26,7 @@ function submitForm(e) {
   
 
   
-
+  document.getElementById("formc").reset();
     // reset the form
   saveMessages(emailid, msgContent);
  
