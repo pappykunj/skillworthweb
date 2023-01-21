@@ -206,7 +206,7 @@ header .search-form label:hover{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 90vh;
+    height: 100vh;
     width: 100%; 
     top: 0; left: 0; right: 0;;
     position: relative;  
@@ -498,21 +498,109 @@ header .search-form label:hover{
     font-size: 2rem;
 }
 .aboutus{
-    background: #000;
+    min-height: 60vh;
+    background-color: #000;
+ 
 }
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .container .box {
+    position: relative;
+    width: 20rem;
+    height: 20rem;
+    margin: 3rem;
+  }
+  .container .box:hover .imgBox {
+    transform: translate(-1.5rem, -1.5rem);
+  }
+  .container .box:hover .contents {
+    transform: translate(3.5rem, 3.5rem);
+  }
+  .imgBox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .imgBox img {
+    width: 20rem;
+    height: 20rem;
+    object-fit: cover;
+    resize: both;
+  }
+  
+  .contents {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    z-index: 1;
+    align-items: flex-end;
+    text-align: center;
+    transition: 0.5s ease-in-out;
+  }
+  
+  .contents h6 {
+    display: block;
+    font-size: 2rem;
+    color: #111;
+    font-weight: 500;
+    line-height: 2rem;
+    letter-spacing: 1px;
+  }
+  
+  .contents span {
+    color: #555;
+    font-size: 1.4rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+  }
+  
+  @media (max-width: 600px) {
+    .container .box:hover .contents {
+      transform: translate(0, 3.5rem);
+    }
+    .container .box:hover .imgBox {
+      transform: translate(0, -3.5rem);
+    }
+  }
+/* table {
+    table-layout : fixed;
+} */
+
 
 .contact{
-    height: 35vh;
+    height: 50vh;
     background: #000;
 }
 .contact .row{
+    display: flex;
+    justify-content:center;
     align-items: center;
+    margin: auto;
     height: 30vh;
     width: 90%;
-    margin-left: 6rem;
     margin-bottom: 0;
 }
 .contact .row .formc h3{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin: auto;
     font-size: 2.5rem;
     text-align: center;
     color: #fff;
