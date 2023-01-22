@@ -47,3 +47,16 @@ var getElementVal = (id) => {
   return document.getElementById(id).value;
 };
 }
+const popup = document.querySelector('.full-screen');
+
+function showPopup(){
+  popup.classList.remove('hidden');
+}
+
+function closePopup(){
+  popup.classList.add('hidden');
+}
+
+
+
+
