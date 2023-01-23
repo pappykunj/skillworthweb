@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <!-- cdn fontawesom  -->
     <script src="https://kit.fontawesome.com/3477ae541c.js" crossorigin="anonymous"></script>
     <link rel = "stylesheet" type=" text/css" href= "style.css">
     <title>ProjectX</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script defer src="https://www.gstatic.com/firebasejs/8.10.0/firebase.js"></script>
     <script src="script.js"></script>
 </head>
@@ -41,19 +42,19 @@
     </header> -->
      <!-- /headr  -->
     <!-- home  -->
-    <section class="home" id="home">
-        <div class="home-content">
-            <div class="home-i">
+    <section class="container home " id="home">
+        <div class="   row row-gap-3 home-content ">
+            <div class=" col-11 home-i">
                 <div class="content">
 
-                    <video autoplay loop muted plays-inline class="back-video">
+                 <video autoplay loop muted plays-inline class="back-video">
                         <source src="websiteimages/Lake - 82680.mp4" type="video/mp4">
                      </video>
                     <img src="websiteimages/My project.png" alt=""width= "250", height="250" style="display:block; margin-left:auto;margin-right:auto">
                     
                     <h1 data-text ="&nbsp;SKILLWORTH &nbsp;">&nbsp;SKILLWORTH &nbsp;</h1>
                     <h2>Hello World_</h2>
-                    <p>welcome to our journey of redsigning the future. </p>
+                    <p>welcome to our journey of redesigning the future. </p>
                     <p>Build your skill set in the most Practical and Informative way possible.</p>
 
                 </div>
@@ -65,9 +66,9 @@
     </section>
     <!-- home  -->
     <!-- intro  -->
-    <section class="intro" id="intro">
-        <div class="intro-content">
-            <div class="intro-i">
+    <section class=" container-fluid intro" id="intro">
+        <div class=" row intro-content">
+            <div class="col-10 intro-i">
                 <div class="content">
                     <h1>
                       
@@ -90,27 +91,32 @@
     </section>
     <!-- intro  --><!-- intro  -->
 <!-- Questions -->
-<section class="working" id="questions">
+<section class="working container-fluid" id="questions">
     <h1 class="heading">Overview<span></span></h1>
 
        <div class="row">
-            
+            <div class="col-7 ">
             <div class="content">
                 <h3>
                    Need help building your dream project? 
                 </h3>
                 <p>We got you, find skillworthy people to join your venture.</p>
-                
+            </div>   
             </div>
+            <div class=" col-3 ">
             <div class="image">
                 <img src="websiteimages/image7.jpg" alt="">
             </div>
         </div>
+        </div>
 
         <div class="row">
+            <div class="col-3">
             <div class="image">
                 <img src="websiteimages/image6.jpg" alt="">
             </div>
+        </div>
+            <div class="col-7">
             <div class="content">
                 <h3>
                     What are the limits of your dream project?
@@ -118,27 +124,35 @@
                 <p>Only your mindset, because skillset isn't gonna be a problem anymore.
                     
                 </p>
-                
+            </div>  
             </div>
         </div>
         
 
         <div class="row">
-           
-            <div class="content">
-                <h3>
-                    Need guidance with projects?
+            <div class="col-7 ">
+                <div class="content">
+                    <h3>
+                        Need guidance with projects?
+    
+                    </h3>
+                    <p>How about a mentor with high skillworth? You can choose your mentor,
+                        can be any individual with the same skill! if you wish to collaborate.
+                     </p>
+                    
+                </div>
 
-                </h3>
-                <p>How about a mentor with high skillworth? You can choose your mentor,
-                    can be any individual with the same skill! if you wish to collaborate.
-                 </p>
-                
             </div>
-            <div class="image">
-                <img src="websiteimages/image4.jpg" >
+            <div class=" col-3 ">
+                <div class="image">
+                    <img src="websiteimages/image4.jpg" >
+                </div>
+            </div>   
+
             </div>
-        </div>      
+           
+           
+               
     
 </section>
 <!-- /Questions  -->
@@ -148,22 +162,24 @@
         <h1 class="heading">How we roll<span></span></h1>
 
         <div class="row">
-            <div class="image">
-                <img src="websiteimages/image5.jpg" alt="">
+            <div class="col-3 ">
+                <div class="image">
+                    <img src="websiteimages/image5.jpg" alt="">
+                </div>
             </div>
-            <div class="content">
-                <h3></h3>
-                <p>Complete the project and your team's skillworth jumps, as simple as that!
-                </p>
-                <p>Time to move on to your next dream and help others make there's. 
-                    Let's see how passionate you are about your dreams.
-                </p>
-                
+            <div class=" col-7 ">
+                <div class="content">
+                    <h3></h3>
+                    <p>Complete the project and your team's skillworth jumps, as simple as that!
+                    </p>
+                    <p>Time to move on to your next dream and help others make there's. 
+                        Let's see how passionate you are about your dreams.
+                    </p>
+                </div>
             </div>
         </div>
     </section>
     <!-- /working -->
-
     <!-- Quote  -->
     <section class="quote" id="quote">
         <div class="quote-content">
@@ -193,8 +209,6 @@
     <h1 class="heading">reviews</h1>
     
     <div class="row">
-       
-        
             <form action="" id="formc">
                 <h1>Help us shape the new sysytem</h1>
                 <h3>We care about every single review and idea we get and will personally pay attention to it.</h3>
