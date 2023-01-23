@@ -563,8 +563,34 @@ header .search-form label:hover {
     color: #fff;
     font-size: 2rem;
 }
-
-.aboutus {
+.full-screen {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.9);
+    
+  }
+  
+  .flex-container-center {
+    displaY: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+  }
+  
+  .full-screen{
+    color: white
+  }
+  
+  .hidden {
+      display: none;
+  }
+  
+  
+  
+.aboutus{
     min-height: 60vh;
     background-color: #000;
 

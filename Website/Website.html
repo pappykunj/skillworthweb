@@ -15,6 +15,7 @@
     <script src="script.js"></script>
 </head>
 <body onload="initializeApp()">
+    
    
     
     <!-- headr  -->
@@ -50,8 +51,7 @@
                  <video autoplay loop muted plays-inline class="back-video">
                         <source src="websiteimages/Lake - 82680.mp4" type="video/mp4">
                      </video>
-                    <img src="websiteimages/My project.png" alt=""width= "250", height="250" style="display:block; margin-left:auto;margin-right:auto">
-                    
+                    <img src="websiteimages/My project.png" alt=""width= "250", height="250" style="display:flex; margin-left:auto;margin-right:auto">
                     <h1 data-text ="&nbsp;SKILLWORTH &nbsp;">&nbsp;SKILLWORTH &nbsp;</h1>
                     <h2>Hello World_</h2>
                     <p>welcome to our journey of redesigning the future. </p>
@@ -219,14 +219,12 @@
                 <textarea  id="msgContent" cols="30" rows="15" placeholder="PLease share your thoughts*"></textarea>
                 </div>
                 <div>
-                <button type="submit">Submit</button>
+                <button onclick="showPopup()" type="submit">Submit</button>
+                <div class="full-screen hidden flex-container-center">
+                 <h2 >Let me tell you about this thing!!</h2>
+                 <button onclick="closePopup()">Close Popup!</button>
                 </div>
-                <!-- <div class="popup">
-                    <h5>Thank You</h5>
-                    <p>Succesfully submitted</p>
-                    <button type="button">OK</button>
 
-                </div> -->
             </form>
        
     </div>
@@ -334,7 +332,7 @@
        
 
         <div class="share">
-            <a href="#" class="fa-brands fa-facebook"></a>
+            <a href="https://instagram.com" class="fa-brands fa-facebook"></a>
             <a href="#" class="fa-brands fa-twitter"></a>
             <a href="#" class="fa-brands fa-instagram"></a>
         </div>
