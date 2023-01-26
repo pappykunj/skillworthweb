@@ -303,74 +303,6 @@ html::-webkit-scrollbar-thumb {
 
 }
 
-.products {
-    background: #333;
-    min-height: 140vh;
-}
-
-.products .row {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(25%, 1fr));
-    gap: 0.8rem;
-    margin: 2.5rem auto;
-    width: 90%;
-
-}
-
-.products .row .colm {
-    padding: 1rem;
-    text-align: center;
-
-
-}
-
-.products .row .colm:hover {
-    box-shadow: var(--box-shodow);
-    background: #eee;
-    border-radius: 1rem;
-    transform: translateY(-1rem);
-}
-
-.products .row .colm .image img {
-    width: 12rem;
-    height: 15rem;
-
-}
-
-.products .row .colm .content h3 {
-    font-size: 3rem;
-    color: #90917E;
-}
-
-.products .row .colm .content .content-p {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 1rem;
-}
-
-.products .row .colm .content .content-p .price {
-    border: 0.1rem solid var(--sc-color);
-    background: var(--sc-color);
-    border-radius: 0.5rem;
-    padding: 0.3rem 0.8rem;
-    font-size: 1.3rem;
-    color: #fff;
-}
-
-.products .row .colm .content .content-p .btn-p {
-    border: 0.1rem solid var(--sc-color);
-    color: #90917E;
-    font-size: 1.6rem;
-    border-radius: 0.5rem;
-    padding: 0.2rem 0.8rem;
-}
-
-.products .row .colm .content .content-p .btn-p:hover {
-    background: var(--sc-color);
-    color: #fff;
-}
-
 
 .review {
     background: rgb(0, 0, 0);
@@ -512,7 +444,7 @@ html::-webkit-scrollbar-thumb {
 
 .container .box {
     position: relative;
-    width: 20rem;
+    width: 19rem;
     height: 20rem;
     margin: 3rem;
 }
