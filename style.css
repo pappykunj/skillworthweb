@@ -714,25 +714,8 @@ html::-webkit-scrollbar-thumb {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-media query
 @media screen and (max-width: 400px){
 
-
-    }
     .home .home-content {
         display: flex;
         justify-content: center;
@@ -822,5 +805,6 @@ media query
         font-family: monospace;
     }
 
+}
 
 
