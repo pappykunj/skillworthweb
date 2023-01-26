@@ -721,7 +721,7 @@ html::-webkit-scrollbar-thumb {
         justify-content: center;
         align-items: center;
         height: 100vh;
-        width: 110%;
+        width: 100%;
         position: relative;
         
     }
@@ -789,7 +789,7 @@ html::-webkit-scrollbar-thumb {
     .intro .intro-content {
         background-size: cover;
         min-height: 100vh;
-        width: 130%;
+        width: 110%;
     
     }
     
