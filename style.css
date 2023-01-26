@@ -9,7 +9,6 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-    text-transform: capitalize;
     font-size: 0.7rem;
     font-family: BLANKA, sans-serif;
     transition: all 0.2s linear;
@@ -60,8 +59,8 @@ html::-webkit-scrollbar-thumb {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    width: 90%;
+    height: 65rem;
+    width: 100%;
     position: relative;
     font-family: monospace;
 }
@@ -74,7 +73,7 @@ html::-webkit-scrollbar-thumb {
 
 .home .back-video {
     width: 100%;
-    height: 100vh;
+    height: 65rem;
     object-fit: cover;
     position: fixed;
     left: 0;
@@ -83,6 +82,14 @@ html::-webkit-scrollbar-thumb {
     bottom: 10;
     z-index: -1;
     
+}
+.home .home-content .home-i img{
+    width: 20rem;
+    height: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
 }
 
 .home .home-content .home-i h1 {
@@ -97,7 +104,7 @@ html::-webkit-scrollbar-thumb {
     content: attr(data-text);
     position: absolute;
     color: #eee;
-    width: 350px;
+    width: 3.5rem;
     overflow: hidden;
     white-space: nowrap;
     animation: animate 7.8s linear infinite;
@@ -126,7 +133,7 @@ html::-webkit-scrollbar-thumb {
     font-size: 4rem;
     font-family: monospace;
     text-align: center;
-    letter-spacing: 1rem;
+    letter-spacing: 0.5rem;
     color: #eee;
 }
 
@@ -144,43 +151,35 @@ html::-webkit-scrollbar-thumb {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 70vh;
-    width: 100%;
-    top: 0;
-    left: 0;
-    right: 0;
+    min-height: 50rem;
+    width: 105%;
+    text-align: center;
     position: relative;
 
 }
 
-.intro .intro-content .intro-i {
+.intro .intro-content .intro-i { 
     display: flex;
+    justify-content: center;
     align-items: center;
     position: absolute;
     top: 4%;
-    left: 5%;
     margin: 8rem;
     flex-wrap: wrap;
     font-family: sans-serif;
 }
 
-.intro .intro-content .intro-i h1 {
-    font-size: 4.3rem;
-    font-family: sans-serif;
 
-}
 
 .intro .intro-content .intro-i p {
     font-size: 2.5rem;
     color: #fff;
     font-family: monospace;
-    gap: 30rem;
-
 }
 
 .questions {
-
-    height: 100vh;
+    height: 100rem;
+    width: 100%;
     background-color: rgb(0, 0, 0);
 
 }
@@ -189,8 +188,7 @@ html::-webkit-scrollbar-thumb {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 0 auto;
-    width: 90%;
+    width: 100%;
 }
 
 .questions .image img {
@@ -210,13 +208,11 @@ html::-webkit-scrollbar-thumb {
 
 .questions .content h3 {
     font-size: 2rem;
-    margin: 0rem;
     color: rgb(0, 0, 0);
 }
 
 .questions .content p {
     font-size: 1rem;
-    margin: 0rem;
     color: rgb(0, 0, 0);
 }
 
@@ -226,15 +222,13 @@ html::-webkit-scrollbar-thumb {
 
 .working {
 
-    min-height: 80vh;
+    min-height: 80rem;
     background-color: #000;
 }
 
 .working .row {
     padding: 4rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    justify-content:space-around;
     margin: 0 auto;
     width: 90%;
 }
@@ -255,14 +249,13 @@ html::-webkit-scrollbar-thumb {
     font-size: 3rem;
     margin: 0rem;
     color: #eee;
-    letter-spacing: 1rem;
+    letter-spacing: 0.5rem;
     font-family: monospace;
 }
 
 .working .row .content p {
     padding: 2rem;
     font-size: 1.9rem;
-    margin: 0rem;
     color: #eee;
     font-family: monospace;
 }
@@ -275,32 +268,25 @@ html::-webkit-scrollbar-thumb {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 52vh;
+    height: 40rem;
     width: 100%;
     position: relative;
+    background-color: #fff;
 
 
 }
 
-.quote .quote-content .quote-i {
-
-    align-items: center;
-    position: absolute;
-    flex-wrap: wrap;
-
-}
-
-.quote .quote-content .quote-i h1 {
-    font-size: 10rem;
-
-}
 
 .quote .quote-content .quote-i p {
     font-size: 3rem;
-    letter-spacing: 0.7rem;
+    letter-spacing: 0.5rem;
     text-align: center;
-    color: #fff;
+    color: rgb(0, 0, 0);
 
+}
+.quote .quote-content .quote-i img{
+    width: 20rem;
+    height: 20rem;
 }
 
 
@@ -315,7 +301,7 @@ html::-webkit-scrollbar-thumb {
     justify-content: center;
     align-items: center;
     margin: auto;
-    height: 80vh;
+    height: 60rem;
     width: 90%;
 }
 
@@ -429,7 +415,7 @@ html::-webkit-scrollbar-thumb {
   
   
 .aboutus{
-    min-height: 60vh;
+    min-height: 45rem;
     background-color: #000;
 
 }
@@ -444,9 +430,9 @@ html::-webkit-scrollbar-thumb {
 
 .container .box {
     position: relative;
-    width: 19rem;
+    width: 20rem;
     height: 20rem;
-    margin: 3rem;
+    margin: 2rem;
 }
 
 .container .box:hover .imgBox {
@@ -496,14 +482,14 @@ html::-webkit-scrollbar-thumb {
     color: #111;
     font-weight: 500;
     line-height: 2rem;
-    letter-spacing: 1px;
+    letter-spacing: 1rem;
 }
 
 .contents span {
     color: #555;
     font-size: 1.4rem;
     font-weight: 300;
-    letter-spacing: 2px;
+    letter-spacing: .2rem;
 }
 
 @media (max-width: 600px) {
@@ -522,7 +508,7 @@ html::-webkit-scrollbar-thumb {
 
 
 .contact {
-    height: 50vh;
+    height: 40rem;
     background: #000;
 }
 
@@ -531,7 +517,7 @@ html::-webkit-scrollbar-thumb {
     justify-content: center;
     align-items: center;
     margin: auto;
-    height: 30vh;
+    height: 25rem;
     width: 90%;
     margin-bottom: 0;
 }
@@ -587,15 +573,13 @@ html::-webkit-scrollbar-thumb {
 } */
 
 .footer {
+    height: 27rem;
     text-align: center;
     background-color: #eee;
 }
 
 .footer .share {
     padding-top: 6rem;
-    
-  
-
 }
 
 .footer .share a {
@@ -613,7 +597,7 @@ html::-webkit-scrollbar-thumb {
 .footer p {
     padding: 1rem;
     font-size: 2rem;
-    font-family: serif;
+    font-family: monospace;
     text-transform: lowercase;
 }
 
@@ -647,96 +631,11 @@ html::-webkit-scrollbar-thumb {
 
 
 @media screen and (max-width: 400px){
-
-    .home .home-content {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        width: 100%;
-        position: relative;
-        
+    html {
+        font-size: 30%;
     }
-    
-    .home .home-content .home-i {
-        position: absolute;
-        flex-wrap: wrap;
-    
-    }
-    
-    .home .back-video {
-        width: 100%;
-        height: 100vh;
-        object-fit: f;
-        position: fixed;
-        left: 10;
-        right: 0;
-        top: 0;
-        bottom: 10;
-        z-index: -1;
-        
-    }
-    
-    .home .home-content .home-i h1 {
-        text-align: center;
-        font-size: 4rem;
-        letter-spacing: 1rem;
-        position: relative;
-    }
-    
-    .home .home-content .home-i h1::before {
-        align-items: center;
-        content: attr(data-text);
-        position: absolute;
-        color: #eee;
-        width: 350px;
-        overflow: hidden;
-        white-space: nowrap;
-        animation: animate 7.8s linear infinite;
-        filter: drop-shadow(0 0 20px rgb(243, 240, 240)) drop-shadow(0 0 50px rgb(255, 255, 255));
-    }
-    
-    
-    @keyframes animate {
-    
-        0%,
-        10%,
-        100% {
-            width: 0rem;
-        }
-    
-    
-        70%,
-        80% {
-            width: 40rem;
-        }
-    }
-    
-    .home .home-content .home-i h2 {
-        font-size: 3rem;
-        letter-spacing: 0.5rem;
-        color: #eee;
-    }
-
-    .intro .intro-content {
-        background-size: cover;
-        min-height: 100vh;
-        width: 110%;
-    
-    }
-    
-    .intro .intro-content .intro-i {
-        position: absolute;
-        margin: 2rem;
-    }
-    
-    .intro .intro-content .intro-i p {
-        font-size: 2rem;
-        padding: auto;
-        text-align: center;
-        font-family: monospace;
-    }
-
 }
+
+ 
 
 
