@@ -5,6 +5,7 @@
 }
 
 * {
+    width: 100%;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -21,7 +22,7 @@
 }
 
 html {
-
+    width: 100%;
     scroll-behavior: smooth;
     scroll-padding-top: 1rem;
 }
@@ -56,7 +57,7 @@ html::-webkit-scrollbar-thumb {
 
 
 .home .home-content {
-    display: flex;
+ 
     justify-content: center;
     align-items: center;
     height: 65rem;
@@ -518,7 +519,7 @@ html::-webkit-scrollbar-thumb {
     align-items: center;
     margin: auto;
     height: 25rem;
-    width: 90%;
+    width: 100%;
     margin-bottom: 0;
 }
 
@@ -607,7 +608,7 @@ html::-webkit-scrollbar-thumb {
     justify-content: center;
     flex-wrap: wrap;
     padding: 2rem 0;
-    gap: 1rem;
+    
     
 }
 
@@ -630,8 +631,9 @@ html::-webkit-scrollbar-thumb {
 
 
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 500px){
     html {
+        width:100%;
         font-size: 30%;
     }
 }
