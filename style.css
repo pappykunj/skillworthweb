@@ -67,7 +67,7 @@ html::-webkit-scrollbar-thumb {
 
 
 .home .home-content {
- 
+    display: flex;
     justify-content: center;
     align-items: center;
     height: 110vh;
@@ -168,14 +168,14 @@ html::-webkit-scrollbar-thumb {
     color: #eee;
 
 }
-.fade-in {
+/* .fade-in {
     opacity: 0;
     transition: opacity 250ms ease-in;
   }
   
   .fade-in.appear {
     opacity: 1;
-  }
+  } */
 
 .intro .intro-content {
     background-color: #000;
@@ -207,7 +207,8 @@ html::-webkit-scrollbar-thumb {
     color: #fff;
     font-family: monospace;
 }
-.from-left {
+
+/* .from-left {
     grid-column: 2 / 3;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
@@ -233,7 +234,7 @@ html::-webkit-scrollbar-thumb {
     -webkit-transform: translateX(0);
     transform: translateX(0);
     opacity: 1;
-  }
+  } */
   
 
 .questions {
@@ -254,7 +255,8 @@ html::-webkit-scrollbar-thumb {
 .questions .image img {
     width: 30rem;
     height: 25rem;
-    padding-left: 8rem;
+    padding-left: 4rem;
+    
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -292,11 +294,11 @@ html::-webkit-scrollbar-thumb {
     padding-left: 4rem;
     right: 0;
     left: 0;
-
+    padding-right: 1rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 80%;
+    width: 100%;
 }
 
 .working .row .image img {
@@ -345,6 +347,8 @@ html::-webkit-scrollbar-thumb {
     letter-spacing: 0.5rem;
     text-align: center;
     color: rgb(0, 0, 0);
+    font-family: 'Orbitron', sans-serif;
+    font-family: 'Zen Dots', cursive;
 
 }
 .quote .quote-content .quote-i img{
@@ -496,7 +500,7 @@ html::-webkit-scrollbar-thumb {
     position: relative;
     width: 18rem;
     height: 18rem;
-    margin: 1rem;
+    margin: 3rem;
 }
 
 .container .box:hover .imgBox {
@@ -547,6 +551,8 @@ html::-webkit-scrollbar-thumb {
     font-weight: 500;
     line-height: 2rem;
     letter-spacing: 0.5rem;
+    font-family: 'Orbitron', sans-serif;
+    font-family: 'Zen Dots', cursive;
 }
 
 .contents span {
