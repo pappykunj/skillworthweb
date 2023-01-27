@@ -43,19 +43,67 @@ const saveMessages = ( emailid, msgContent) => {
 });
 }
 
-var getElementVal = (id) => {
-  return document.getElementById(id).value;
+}
+// var getElementVal = (id) => {
+//   return document.getElementById(id).value;
+// };
+
+// const popup = document.querySelector('.full-screen');
+
+// function showPopup(){
+//   popup.classList.remove('hidden');
+// }
+
+// function closePopup(){
+//   popup.classList.add('hidden');
+// }
+
+
+const header = document.querySelector("header");
+const sectionOne = document.querySelector("intro");
+const faders = document.querySelectorAll(".fade-in");
+const sliders = document.querySelectorAll(".slide-in");
+
+const sectionOneOptions = {
+  rootMargin: "-200px 0px 0px 0px"
 };
-}
-const popup = document.querySelector('.full-screen');
 
-function showPopup(){
-  popup.classList.remove('hidden');
-}
+const sectionOneObserver = new IntersectionObserver(function(
+  entries,
+  sectionOneObserver
+) {
+},
+sectionOneOptions);
 
-function closePopup(){
-  popup.classList.add('hidden');
-}
+sectionOneObserver.observe(sectionOne);
+
+const appearOptions = {
+  threshold: 1,
+  rootMargin: "0px 0px -25px 0px"
+};
+
+const appearOnScroll = new IntersectionObserver(function(
+  entries,
+  appearOnScroll
+) {
+  entries.forEach(entry => {
+    if (!entry.isIntersecting) {
+      return;
+    } else {
+      entry.target.classList.add("appear");
+      appearOnScroll.unobserve(entry.target);
+    }
+  });
+},
+appearOptions);
+
+faders.forEach(fader => {
+  appearOnScroll.observe(fader);
+});
+
+sliders.forEach(slider => {
+  appearOnScroll.observe(slider);
+});
 
 
 

@@ -22,6 +22,7 @@
     font-size: 0.8rem;
     font-family: Blanka, sans-serif;
     transition: all 0.2s linear;
+    
 }
 
 :root {
@@ -117,6 +118,7 @@ html::-webkit-scrollbar-thumb {
     font-size: 6rem;
     letter-spacing: 1rem;
     position: relative;
+    font-family: 'Blanka', sans-serif;
 }
 
 .home .home-content .home-i h1::before {
@@ -165,6 +167,14 @@ html::-webkit-scrollbar-thumb {
     color: #eee;
 
 }
+.fade-in {
+    opacity: 0;
+    transition: opacity 250ms ease-in;
+  }
+  
+  .fade-in.appear {
+    opacity: 1;
+  }
 
 .intro .intro-content {
     background-color: #000;
@@ -196,6 +206,34 @@ html::-webkit-scrollbar-thumb {
     color: #fff;
     font-family: monospace;
 }
+.from-left {
+    grid-column: 2 / 3;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+  
+  .from-right {
+    grid-column: 3 / 4;
+    -webkit-transform: translateX(50%);
+    transform: translateX(50%);
+  }
+  
+  .from-left,
+  .from-right {
+    transition: opacity 250ms ease-in, -webkit-transform 400ms ease-in;
+    transition: opacity 250ms ease-in, transform 400ms ease-in;
+    transition: opacity 250ms ease-in, transform 400ms ease-in,
+      -webkit-transform 400ms ease-in;
+    opacity: 0;
+  }
+  
+  .from-left.appear,
+  .from-right.appear {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+  
 
 .questions {
     height: 100rem;
