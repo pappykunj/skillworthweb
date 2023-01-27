@@ -450,13 +450,14 @@ html::-webkit-scrollbar-thumb {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    padding: 4rem;
 }
 
 .container .box {
     position: relative;
-    width: 20rem;
-    height: 20rem;
-    margin: 2rem;
+    width: 18rem;
+    height: 18rem;
+    margin: 1rem;
 }
 
 .container .box:hover .imgBox {
@@ -478,8 +479,8 @@ html::-webkit-scrollbar-thumb {
 }
 
 .imgBox img {
-    width: 20rem;
-    height: 20rem;
+    width: 18rem;
+    height: 18rem;
     object-fit: cover;
     resize: both;
 }
@@ -502,11 +503,11 @@ html::-webkit-scrollbar-thumb {
 
 .contents h6 {
     display: block;
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: #111;
     font-weight: 500;
     line-height: 2rem;
-    letter-spacing: 1rem;
+    letter-spacing: 0.5rem;
 }
 
 .contents span {
@@ -516,7 +517,7 @@ html::-webkit-scrollbar-thumb {
     letter-spacing: .2rem;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 350px) {
     .container .box:hover .contents {
         transform: translate(0, 3.5rem);
     }
@@ -597,7 +598,6 @@ html::-webkit-scrollbar-thumb {
 } */
 
 .footer {
-    /* height: 27rem; */
     text-align: center;
     background-color: #eee;
 }
@@ -615,7 +615,7 @@ html::-webkit-scrollbar-thumb {
     color: #000;
     border: 0.1rem solid var(--sc-color);
     margin: 0.3rem;
-    
+    text-decoration: none;
 }
 
 .footer p {
@@ -695,6 +695,11 @@ html,body{
         justify-content: center;
         align-items: center;
         margin: auto;
+    }
+    .footer {
+        height: 80rem;
+        text-align: center;
+        background-color: #eee;
     }
 }
 
