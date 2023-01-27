@@ -88,7 +88,7 @@ html::-webkit-scrollbar-thumb {
 }
 .home .home-content .home-i img{
     width: 20rem;
-    height: 20rem;
+    height: 40rem;
     display: flex;
     justify-content: center;
     align-items: center;
