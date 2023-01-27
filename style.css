@@ -70,28 +70,27 @@ html::-webkit-scrollbar-thumb {
  
     justify-content: center;
     align-items: center;
-    height: 110vh;
+    height: 120vh;
     width: 100%;
     position: relative;
     font-family: monospace;
 }
 
 .home .home-content .home-i {
-    position: absolute;
+    position: relative;
     flex-wrap: wrap;
 
 }
 
 .home .back-video {
     width: 105%;
-    height: 100vh;
+    height: 110vh;
     object-fit: cover;
     position: fixed;
     left:0;
     right: 0;
     top: 0;
     bottom: 0;
-
     z-index: -1;
     
 }
@@ -103,6 +102,15 @@ html::-webkit-scrollbar-thumb {
     align-items: center;
     margin: auto;
 }
+    .home .home-content .home-i h4{
+    text-align: center;
+    font-size: 2rem;
+    letter-spacing: 1rem;
+    position: relative;
+    margin-top: 4rem;
+    color: #eee;
+
+    }
 
 .home .home-content .home-i h1 {
     text-align: center;
@@ -664,7 +672,7 @@ html,body{
  
         justify-content: center;
         align-items: center;
-        min-height: 70vh;
+        height: 70vh;
         width: 100%;
         position: relative;
         font-family: monospace;
