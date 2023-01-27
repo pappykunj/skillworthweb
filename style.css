@@ -2,17 +2,25 @@
 
 
 @font-face {
-    font-family: "BLANKA", sans-serif;
-    src: url ('fonts\Blanka-Regular.ttf');
+    font-family: 'Blanka', sans-serif;
+    src: url('fonts/Blanka.eot'); /* IE9 Compat Modes */
+    src: url('fonts/Blanka.eot?#iefix') format('embedded-opentype'); /* IE6-IE8 */
+    src: url('fonts/Blanka.woff2') format('woff2'); /* Super Modern Browsers */
+    src: url('fonts/Blanka.woff') format('woff'); /* Pretty Modern Browsers */
+    src: url('fonts/Blanka.ttf')  format('truetype'); /* Safari, Android, iOS */
+    src: url('fonts/Blanka.svg') format('svg'); /* Legacy iOS */
+    font-weight: 200;
+    font-style: normal;
 }
+
 
 * {
     margin: 0rem;
     padding: 0rem;
     box-sizing: border-box;
     text-decoration: none;
-    font-size: 0.7rem;
-    font-family: BLANKA, sans-serif;
+    font-size: 0.8rem;
+    font-family: Blanka, sans-serif;
     transition: all 0.2s linear;
 }
 
@@ -46,6 +54,7 @@ html::-webkit-scrollbar-thumb {
     color: var(--sc-color);
     padding: 1.5rem;
     text-align: center;
+    text-transform: uppercase;
 }
 
 .heading:hover {
@@ -61,7 +70,7 @@ html::-webkit-scrollbar-thumb {
  
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 110vh;
     width: 100%;
     position: relative;
     font-family: monospace;
@@ -88,7 +97,7 @@ html::-webkit-scrollbar-thumb {
 }
 .home .home-content .home-i img{
     width: 20rem;
-    height: 40rem;
+    height: 20rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -655,7 +664,7 @@ html,body{
  
         justify-content: center;
         align-items: center;
-        min-height: 90vh;
+        min-height: 70vh;
         width: 100%;
         position: relative;
         font-family: monospace;
@@ -669,7 +678,15 @@ html,body{
     
     .home .back-video {
         width: 100%;
-        min-height: 90vh;    
+        min-height: 70vh;    
+    }
+    .home .home-content .home-i img{
+        width: 40rem;
+        height: 40rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
     }
 }
 
