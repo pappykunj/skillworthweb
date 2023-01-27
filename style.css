@@ -1,16 +1,11 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Ms+Madi&family=Square+Peg&display=swap'); */
-@import url('https://fonts.cdnfonts.com/css/blanka');
 
 @font-face {
-    font-family: 'Blanka', sans-serif;
-    src: url('fonts/Blanka.eot'); /* IE9 Compat Modes */
-    src: url('fonts/Blanka.eot?#iefix') format('embedded-opentype'); /* IE6-IE8 */
-    src: url('fonts/Blanka.woff2') format('woff2'); /* Super Modern Browsers */
-    src: url('fonts/Blanka.woff') format('woff'); /* Pretty Modern Browsers */
-    src: url('fonts/Blanka.ttf')  format('truetype'); /* Safari, Android, iOS */
-    src: url('fonts/Blanka.svg') format('svg'); /* Legacy iOS */
     font-weight: 200;
     font-style: normal;
+    font-stretch: 100%;
+    font-family: Blanka;
+    src: url('https://fonts.cdnfonts.com/css/blanka');
 }
 
 
@@ -20,7 +15,6 @@
     box-sizing: border-box;
     text-decoration: none;
     font-size: 0.8rem;
-    font-family: Blanka, sans-serif;
     transition: all 0.2s linear;
     
 }
@@ -118,7 +112,7 @@ html::-webkit-scrollbar-thumb {
     font-size: 6rem;
     letter-spacing: 1rem;
     position: relative;
-    font-family: 'Blanka', sans-serif;
+    font-family: Blanka ;
 }
 
 .home .home-content .home-i h1::before {
