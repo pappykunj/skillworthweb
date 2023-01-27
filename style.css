@@ -1,5 +1,8 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Ms+Madi&family=Square+Peg&display=swap'); */
 
+  @import url('https://fonts.googleapis.com/css2?family=Orbitron&family=Zen+Dots&display=swap');
+
+
 @font-face {
     font-weight: 200;
     font-style: normal;
@@ -47,9 +50,11 @@ html::-webkit-scrollbar-thumb {
 .heading {
     font-size: 6.2rem;
     color: var(--sc-color);
-    padding: 1.5rem;
+    padding: 4.5rem;
     text-align: center;
     text-transform: uppercase;
+    font-family: 'Orbitron', sans-serif;
+    font-family: 'Zen Dots', cursive;
 }
 
 .heading:hover {
@@ -102,7 +107,7 @@ html::-webkit-scrollbar-thumb {
     font-size: 2rem;
     letter-spacing: 1rem;
     position: relative;
-    margin-top: 4rem;
+    margin: 4rem;
     color: #eee;
 
     }
@@ -112,7 +117,9 @@ html::-webkit-scrollbar-thumb {
     font-size: 6rem;
     letter-spacing: 1rem;
     position: relative;
-    font-family: Blanka ;
+    font-family: 'Orbitron', sans-serif;
+    font-family: 'Orbitron', sans-serif;
+    font-family: 'Zen Dots', cursive;
 }
 
 .home .home-content .home-i h1::before {
@@ -139,7 +146,7 @@ html::-webkit-scrollbar-thumb {
 
     70%,
     80% {
-        width: 53rem;
+        width: 64rem;
     }
 }
 
