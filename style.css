@@ -1,13 +1,14 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Ms+Madi&family=Square+Peg&display=swap'); */
+
+
 @font-face {
-    font-family: 'BLANKA', sans-serif;
-    src: url ('blanka-free-font-er/BLANKA\ Font/Blanka-Regular.otf') format ('opentype');
+    font-family: "BLANKA", sans-serif;
+    src: url ('fonts\Blanka-Regular.ttf') format ('opentype');
 }
 
 * {
-    width: 100%;
-    margin: 0;
-    padding: 0;
+    margin: 0rem;
+    padding: 0rem;
     box-sizing: border-box;
     text-decoration: none;
     font-size: 0.7rem;
@@ -73,13 +74,14 @@ html::-webkit-scrollbar-thumb {
 }
 
 .home .back-video {
-    width: 100%;
+    width: 105%;
     height: 100vh;
     object-fit: cover;
     position: fixed;
-    left: 10;
+    left:0;
     right: 0;
     top: 0;
+    bottom: 0;
 
     z-index: -1;
     
@@ -186,6 +188,7 @@ html::-webkit-scrollbar-thumb {
 }
 
 .questions.row {
+    padding: 4rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -213,7 +216,7 @@ html::-webkit-scrollbar-thumb {
 }
 
 .questions .content p {
-    font-size: 1rem;
+    font-size: 2rem;
     color: rgb(0, 0, 0);
 }
 
@@ -222,17 +225,22 @@ html::-webkit-scrollbar-thumb {
 }
 
 .working {
-
+    width: 100%;
     min-height: 80rem;
     background-color: #000;
 }
 
 .working .row {
-    padding: 4rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    padding-left: 4rem;
+    right: 0;
+    left: 0;
+
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 90%;
+    width: 80%;
 }
 
 .working .row .image img {
@@ -244,20 +252,17 @@ html::-webkit-scrollbar-thumb {
 .working .row .content {
     background: rgb(0, 0, 0);
     text-align: center;
-    padding: 2rem;
 }
 
 .working .row .content h3 {
-    font-size: 3rem;
-    margin: 0rem;
+    font-size: 2.5rem;
     color: #eee;
-    letter-spacing: 0.5rem;
     font-family: monospace;
 }
 
 .working .row .content p {
     padding: 2rem;
-    font-size: 1.9rem;
+    font-size: 2rem;
     color: #eee;
     font-family: monospace;
 }
@@ -575,7 +580,7 @@ html::-webkit-scrollbar-thumb {
 } */
 
 .footer {
-    height: 27rem;
+    /* height: 27rem; */
     text-align: center;
     background-color: #eee;
 }
@@ -593,7 +598,7 @@ html::-webkit-scrollbar-thumb {
     color: #000;
     border: 0.1rem solid var(--sc-color);
     margin: 0.3rem;
-    text-decoration: none;
+    
 }
 
 .footer p {
@@ -606,9 +611,10 @@ html::-webkit-scrollbar-thumb {
 .footer .links {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content:center;
     flex-wrap: wrap;
-    padding: 2rem 0;
+    padding: 2rem ;
+    gap:1rem;
     
     
 }
@@ -626,6 +632,8 @@ html::-webkit-scrollbar-thumb {
 .footer .share a:hover {
     background: var(--sc-color);
 }
+
+
 html,body{
     overflow-x: hidden;
 }
@@ -638,7 +646,7 @@ html,body{
 @media screen and (max-width: 500px){
     html {
         width:100%;
-        font-size: 30%;
+        font-size: 32%;
     }
     .container .box {
         margin: 5rem;
@@ -661,9 +669,7 @@ html,body{
     
     .home .back-video {
         width: 100%;
-        min-height: 90vh;
-
-        
+        min-height: 90vh;    
     }
 }
 
