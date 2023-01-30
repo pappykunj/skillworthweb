@@ -603,15 +603,15 @@ html::-webkit-scrollbar-thumb {
     font-family: monospace;
 }
 
-/* .contact .row .formc input{
+.contact .row .formc input{
     background: #000;
     border-radius: 0.5rem;
     border: 0.1rem solid var(--sc-color);
     height: 2.3rem; width: 90%;
     color: rgb(172, 170, 170);
     font-size: 1.5rem;
-} */
-/* .contact .row .form-c input[type="submit"]{
+} 
+.contact .row .form-c input[type="submit"]{
     background: var(--sc-color);
     cursor: pointer;
     font-size: 1.5rem;
@@ -622,14 +622,14 @@ html::-webkit-scrollbar-thumb {
 .contact .row .form-c input[type="submit"]:hover{
     background: #fff;
     color: var(--sc-color);
-} */
-/* .contact .row textarea{
+}
+ .contact .row textarea{
     background: #fff;
     border: 0.1rem solid var(--sc-color);
     height: 12rem; width: 90%;
     padding: 0.5rem 0.8rem; 
     font-size: 1.5rem;
-} */
+}
 /* .popup{
     width: 100%;
     background: #fff;

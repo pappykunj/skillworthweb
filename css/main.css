@@ -2083,6 +2083,78 @@ body.menu-is-open {
 }
 
 @media only screen and (max-width:400px) {
+  .review {
+    
+    padding: 0rem;
+  
+  }
+  
+  
+  .review .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80rem;
+    width: 100%;
+  }
+  
+  .review .row .box {
+    text-align: center;
+    border-radius: 1rem;
+  
+  }
+  
+  .review .row input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    margin: auto;
+    margin-bottom: 1rem;
+    border-radius: 0.8rem;
+    border: 0.1rem solid var(#758c36);
+    height: 5rem;
+    width: 100%;
+    color: #fff;
+    font-size: 2rem;
+    font-family: "Montserrat", sans-serif;
+    text-transform: lowercase
+  }
+  
+  .review .row button {
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    border-radius: 0.8rem;
+    font-family: monospace;
+    background: var(#758c36);
+    cursor: pointer;
+  
+    padding: 0rem;
+    height: 3rem;
+    width: 40%;
+    color: rgb(0, 0, 0);
+  }
+  
+  .review .row textarea {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 1rem;
+    background: #000;
+    border-radius: 0.8rem;
+    border: 0.1rem solid var(--sc-color);
+    height: 20rem;
+    width: 90%;
+    padding: 0.5rem 0.8rem;
+    font-family: "Montserrat", sans-serif;
+    color: #fff;
+    font-size: 2rem;
+  }
+  
   .s-header {
     top: 6px;
   }
@@ -2528,6 +2600,68 @@ html.no-csstransitions .home-content__main {
 
   .home-content h3 {
     font-size: 3.7rem;
+  }
+  .review .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80rem;
+    width: 100%;
+  }
+  
+  .review .row .box {
+    text-align: center;
+    border-radius: 1rem;
+  
+  }
+  
+  .review .row input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    margin: auto;
+    margin-bottom: 1rem;
+    border-radius: 0.8rem;
+    border: 0.1rem solid var(#758c36);
+    height: 5rem;
+    width: 100%;
+    color: #fff;
+    font-size: 2rem;
+    font-family: "Montserrat", sans-serif;
+    text-transform: lowercase
+  }
+  
+  .review .row button {
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    border-radius: 0.8rem;
+    font-family: "Montserrat", sans-serif;
+    background: var(#490085);
+    cursor: pointer;
+    
+    height: 3rem;
+    width: 40%;
+    color: rgb(0, 0, 0);
+  }
+  
+  .review .row textarea {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 1rem;
+    background: #000;
+    border-radius: 0.8rem;
+    border: 0.1rem solid var(--sc-color);
+    height: 20rem;
+    width: 100%;
+    font-family: "Montserrat", sans-serif;
+    color: #fff;
+    font-size: 2rem;
   }
 
 }
@@ -3719,7 +3853,7 @@ html.no-csstransitions .home-content__main {
 }
 
 .contact-email a {
-  font-size: 9rem;
+  font-size: 6rem;
   font-weight: 700;
   line-height: 1.2;
   color: #FFFFFF;

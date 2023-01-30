@@ -44,9 +44,9 @@ const saveMessages = ( emailid, msgContent) => {
 }
 
 }
-// var getElementVal = (id) => {
-//   return document.getElementById(id).value;
-// };
+var getElementVal = (id) => {
+  return document.getElementById(id).value;
+};
 
 // const popup = document.querySelector('.full-screen');
 
